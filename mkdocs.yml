@@ -1,0 +1,75 @@
+site_name: AquaPack Robotics SW8 Documentation
+extra_css:
+  - stylesheets/extra.css
+extra_javascript:
+  - javascript/zooming.min.js
+  - javascript/activate.js
+theme:
+  name: material
+  logo: img/logo.png
+  favicon: img/favicon.png
+  features:
+    - navigation.tabs
+  palette:
+    - scheme: default
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+    - scheme: slate
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
+markdown_extensions:
+  - attr_list
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+extra:
+  generator: false
+copyright: AquaPack Robotics &copy; 2023 Released under <a id="footer-link" href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>
+nav:
+  - Home: index.md
+  - Electrical: 
+    - Standards: electrical/standards.md
+    - Software Tools: 
+      - Overview: electrical/software/overview.md
+      - KiCad User Guide: electrical/software/kicad.md
+      # TODO: User guides for KiCad, LTSpice, PSpice TI, Git. Spice sim guides need to include importing TI and non TI parts.
+      # TODO: User guides for CCS, Arduino for MSP430 with MB3hel fork of Energia
+    - Embedded Programming:
+      - Style Guide: electrical/embedded/styleguide.md
+      - MSP430: electrical/embedded/msp430.md
+    - Connectors:
+      - Crimped Connectors: electrical/connectors/crimping.md
+      - Soldered Connectors: electrical/connectors/soldering.md
+      - Fischers: electrical/connectors/fischers.md
+      - Waterproof Splicing: electrical/connectors/waterproof_splice.md
+    - System Design:
+      - Overview: electrical/sysdesign/overview.md
+      - Power System: electrical/sysdesign/moab_power.md
+      - Acoustics System: electrical/sysdesign/acoustics.md
+      - Cameras: electrical/sysdesign/cameras.md
+      - Batteries: electrical/sysdesign/batteries.md
+      - Endcap Pinout: electrical/sysdesign/endcap.md
+    - Boards:
+      - Main Electronics Board (MEB): electrical/boards/meb.md
+      - Manipulation Systems Board (MSB): electrical/boards/msb.md
+      - Load Balancing Board (LBB): electrical/boards/lbb.md
+      - Control Board: electrical/boards/controlboard.md
+      - Acoustics Distribution Board: electrical/boards/acoustics_dist.md
+      - Acoustics Single Channel Board: electrical/boards/acoustics_single_chan.md
+      - Standalone Leak Detector: electrical/boards/standalone_leak.md
+      - Regulator Carseat: electrical/boards/regulator_carseat.md
+    - Legacy Design:
+      - Power System: electrical/legacy/powersys.md
+      - Control System: electrical/legacy/controlsys.md
+      - Acoustics System: electrical/legacy/acoustics.md
+      - Boards: electrical/legacy/boards.md
+      - Cameras: electrical/legacy/cameras.md
+    - Parts List / Bill of Materials: electrical/parts.md
+    - Repository List: electrical/repos.md
+  - Mechanical:
+    - Overview: mechanical/overview.md
+  - Software:
+    - Overview: software/overview.md
+  - ⮤ Return to general documentation: https://ncsurobotics.github.io/
