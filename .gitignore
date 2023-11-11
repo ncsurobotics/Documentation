@@ -1,0 +1,6 @@
+site/
+.$*.drawio.bkp
+.$*.drawio.dtmp
+
+# Python venv
+.venv/
