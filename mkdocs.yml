@@ -29,23 +29,23 @@ extra:
 copyright: AquaPack Robotics &copy; 2023 Released under <a id="footer-link" href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>
 nav:
   - Home: index.md
-#  - Electrical: 
-#    - Standards: electrical/standards.md
-#    - Software Tools: 
-#      - Overview: electrical/software/overview.md
-#      - KiCad User Guide: electrical/software/kicad.md
+  - Electrical: 
+    - Standards: electrical/standards.md
+    - Software Tools: 
+      - Overview: electrical/software/overview.md
+      - KiCad User Guide: electrical/software/kicad.md
 #      # TODO: User guides for KiCad, LTSpice, PSpice TI, Git. Spice sim guides need to include importing TI and non TI parts.
 #      # TODO: User guides for CCS, Arduino for MSP430 with MB3hel fork of Energia
-#    - Embedded Programming:
-#      - Style Guide: electrical/embedded/styleguide.md
-#    - Connectors:
-#      - Crimped Connectors: electrical/connectors/crimping.md
-#      - Soldered Connectors: electrical/connectors/soldering.md
-#      - Fischers: electrical/connectors/fischers.md
-#      - Waterproof Splicing: electrical/connectors/waterproof_splice.md
-#  - Mechanical:
-#    - Overview: mechanical/overview.md
-#  - Software:
-#    - Overview: software/overview.md
+    - Embedded Programming:
+      - Style Guide: electrical/embedded/styleguide.md
+    - Connectors:
+      - Crimped Connectors: electrical/connectors/crimping.md
+      - Soldered Connectors: electrical/connectors/soldering.md
+      - Fischers: electrical/connectors/fischers.md
+      - Waterproof Splicing: electrical/connectors/waterproof_splice.md
+  - Mechanical:
+    - Overview: mechanical/overview.md
+  - Software:
+    - Overview: software/overview.md
   - SeaWolf 8: https://ncsurobotics.github.io/SW8-Documentation/
   - SeaWolf 9: https://ncsurobotics.github.io/SW9-Documentation/
