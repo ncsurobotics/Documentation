@@ -1,0 +1,1670 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../overview/">
+      
+      
+        <link rel="next" href="../../embedded/styleguide/">
+      
+      
+      <link rel="icon" href="../../../img/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.4.8">
+    
+    
+      
+        <title>KiCad User Guide - AquaPack Robotics Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.4b4a2bd9.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.356b1318.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#installation" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="AquaPack Robotics Documentation" class="md-header__button md-logo" aria-label="AquaPack Robotics Documentation" data-md-component="logo">
+      
+  <img src="../../../img/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            AquaPack Robotics Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              KiCad User Guide
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6zm0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4zM7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../.." class="md-tabs__link">
+        
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../standards/" class="md-tabs__link">
+          
+  
+  Electrical
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../mechanical/overview/" class="md-tabs__link">
+          
+  
+  Mechanical
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../software/overview/" class="md-tabs__link">
+          
+  
+  Software
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="https://ncsurobotics.github.io/SW8-Documentation/" class="md-tabs__link">
+        
+  
+    
+  
+  SeaWolf 8
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="https://ncsurobotics.github.io/SW9-Documentation/" class="md-tabs__link">
+        
+  
+    
+  
+  SeaWolf 9
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="AquaPack Robotics Documentation" class="md-nav__button md-logo" aria-label="AquaPack Robotics Documentation" data-md-component="logo">
+      
+  <img src="../../../img/logo.png" alt="logo">
+
+    </a>
+    AquaPack Robotics Documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+    
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Electrical
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Electrical
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../standards/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Standards
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Software Tools
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            Software Tools
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../overview/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Overview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    KiCad User Guide
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    KiCad User Guide
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#installation" class="md-nav__link">
+    Installation
+  </a>
+  
+    <nav class="md-nav" aria-label="Installation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#windows" class="md-nav__link">
+    Windows
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#macos" class="md-nav__link">
+    macOS
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#linux" class="md-nav__link">
+    Linux
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#swlib" class="md-nav__link">
+    SWLib
+  </a>
+  
+    <nav class="md-nav" aria-label="SWLib">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#installation_1" class="md-nav__link">
+    Installation
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#updating" class="md-nav__link">
+    Updating
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#creating-new-parts" class="md-nav__link">
+    Creating new Parts
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#importing-downloaded-parts" class="md-nav__link">
+    Importing Downloaded Parts
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#creating-a-new-project" class="md-nav__link">
+    Creating a New Project
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#opening-an-existing-project" class="md-nav__link">
+    Opening an Existing Project
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#design-workflow" class="md-nav__link">
+    Design Workflow
+  </a>
+  
+    <nav class="md-nav" aria-label="Design Workflow">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#schematic" class="md-nav__link">
+    Schematic
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#electrical-rules-check" class="md-nav__link">
+    Electrical Rules Check
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#assign-footprints" class="md-nav__link">
+    Assign footprints
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pcb-setup" class="md-nav__link">
+    PCB Setup
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pcb-layout-routing" class="md-nav__link">
+    PCB Layout &amp; Routing
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#design-rules-check-drc" class="md-nav__link">
+    Design Rules Check (DRC)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tips-and-tricks" class="md-nav__link">
+    Tips and Tricks
+  </a>
+  
+    <nav class="md-nav" aria-label="Tips and Tricks">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#flat-multi-page-schematics" class="md-nav__link">
+    Flat multi-page Schematics
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#handsolder-footprints" class="md-nav__link">
+    HandSolder Footprints
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mounting-holes" class="md-nav__link">
+    Mounting Holes
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#silkscreen-text-size" class="md-nav__link">
+    Silkscreen Text size
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#adding-images-to-silkscreen" class="md-nav__link">
+    Adding Images to Silkscreen
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#thermal-relief-connections-to-pads" class="md-nav__link">
+    Thermal Relief Connections to Pads
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#other-useful-options-features-of-pcb-editor" class="md-nav__link">
+    Other Useful Options / Features of PCB Editor
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Embedded Programming
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            Embedded Programming
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../embedded/styleguide/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Style Guide
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4" id="__nav_2_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Connectors
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            Connectors
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../connectors/crimping/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Crimped Connectors
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../connectors/soldering/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Soldered Connectors
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../connectors/fischers/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Fischers
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../connectors/waterproof_splice/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Waterproof Splicing
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Mechanical
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Mechanical
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../mechanical/overview/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Overview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Software
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Software
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../software/overview/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Overview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://ncsurobotics.github.io/SW8-Documentation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    SeaWolf 8
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://ncsurobotics.github.io/SW9-Documentation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    SeaWolf 9
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#installation" class="md-nav__link">
+    Installation
+  </a>
+  
+    <nav class="md-nav" aria-label="Installation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#windows" class="md-nav__link">
+    Windows
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#macos" class="md-nav__link">
+    macOS
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#linux" class="md-nav__link">
+    Linux
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#swlib" class="md-nav__link">
+    SWLib
+  </a>
+  
+    <nav class="md-nav" aria-label="SWLib">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#installation_1" class="md-nav__link">
+    Installation
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#updating" class="md-nav__link">
+    Updating
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#creating-new-parts" class="md-nav__link">
+    Creating new Parts
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#importing-downloaded-parts" class="md-nav__link">
+    Importing Downloaded Parts
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#creating-a-new-project" class="md-nav__link">
+    Creating a New Project
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#opening-an-existing-project" class="md-nav__link">
+    Opening an Existing Project
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#design-workflow" class="md-nav__link">
+    Design Workflow
+  </a>
+  
+    <nav class="md-nav" aria-label="Design Workflow">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#schematic" class="md-nav__link">
+    Schematic
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#electrical-rules-check" class="md-nav__link">
+    Electrical Rules Check
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#assign-footprints" class="md-nav__link">
+    Assign footprints
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pcb-setup" class="md-nav__link">
+    PCB Setup
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pcb-layout-routing" class="md-nav__link">
+    PCB Layout &amp; Routing
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#design-rules-check-drc" class="md-nav__link">
+    Design Rules Check (DRC)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tips-and-tricks" class="md-nav__link">
+    Tips and Tricks
+  </a>
+  
+    <nav class="md-nav" aria-label="Tips and Tricks">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#flat-multi-page-schematics" class="md-nav__link">
+    Flat multi-page Schematics
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#handsolder-footprints" class="md-nav__link">
+    HandSolder Footprints
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mounting-holes" class="md-nav__link">
+    Mounting Holes
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#silkscreen-text-size" class="md-nav__link">
+    Silkscreen Text size
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#adding-images-to-silkscreen" class="md-nav__link">
+    Adding Images to Silkscreen
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#thermal-relief-connections-to-pads" class="md-nav__link">
+    Thermal Relief Connections to Pads
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#other-useful-options-features-of-pcb-editor" class="md-nav__link">
+    Other Useful Options / Features of PCB Editor
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  <h1>KiCad User Guide</h1>
+
+<p><em>Note that this page is currently an outline and most of the content is not yet written.</em></p>
+<p>This user guide is intended to be a reference, not a tutorial. There are many good KiCad tutorials available online, however please note that there are sometimes multiple ways to do things in KiCad (eg library management). <em>In such cases, please use the methods described on this page.</em> Part of this page's purpose is to describe our conventions / approaches to using KiCad.</p>
+<p><em>Note that this guide was written for KiCad 7.0.1</em></p>
+<h2 id="installation">Installation</h2>
+<!--
+Note: Download links are intentionally omitted from user guide for a few reasons
+    1. It means links only have to be updated in one place
+    2. Any required version information or critical notes will be in the overview. This forces people to look there.
+-->
+
+<p>See the <a href="../overview/#kicad">Software Overview page</a> for download links and required version information (if any).</p>
+<h3 id="windows">Windows</h3>
+<ul>
+<li>Download the installer (<code>exe</code> file)</li>
+<li>Run the installer. It will require administrative privileges.</li>
+<li>Follow the instructions of the installer. Default settings / options are sufficient.</li>
+<li>Install SWLib (see instructions in following section) after the installation completes.</li>
+</ul>
+<h3 id="macos">macOS</h3>
+<ul>
+<li>Download the <code>dmg</code> file</li>
+<li>Open the dmg disk image</li>
+<li>Drag the <code>KiCad</code> folder to <code>Applications</code> as indicated by the arrow</li>
+<li>Wait for the copy operation to complete</li>
+<li>KiCad is now installed</li>
+<li>Install SWLib (see instructions in following section) after the installation completes.</li>
+</ul>
+<h3 id="linux">Linux</h3>
+<ul>
+<li>Follow <a href="https://www.kicad.org/download/linux/">KiCad's Instructions</a>. On Ubuntu this entails adding a ppa and installing the packages.</li>
+<li>Install SWLib (see instructions in following section) after the installation completes.</li>
+</ul>
+<h2 id="swlib">SWLib</h2>
+<p>SWLib is a KiCad library containing symbols, footprints, and 3D models for components used on SeaWolf's boards. This library is shared among many robots (not SeaWolf VIII exclusive).</p>
+<p>This library must be installed once per system you install KiCad on.</p>
+<p><em>Note: you must have <code>git</code> installed to install, modify, or update SWLib!</em></p>
+<h3 id="installation_1">Installation</h3>
+<ol>
+<li>Clone <a href="https://github.com/ncsurobotics/SW-KicadLibrary/">this</a> repository somewhere on your system. The location does not matter. <em>On windows, avoid putting it in OneDrive (ie don't put it in your documents folder)</em>.</li>
+<li>Open KiCad. Close any open project (File &gt; Close Project)</li>
+<li>Preferences &gt; Manage Symbol Libraries</li>
+<li>The first time you open this menu, you will be asked to "Configure Global Symbol Library Table". Choose "Copy Default Global Symbol Table"</li>
+<li>On the Global Libraries tab select the folder icon at the bottom (Add existing library to table)</li>
+<li>Navigate to wherever you cloned the repo. Choose the <code>SWLib.kicad_sym</code> file.</li>
+<li>Click OK to close the symbol library table.</li>
+<li>Preferences &gt; Manage Footprint Libraries</li>
+<li>The first time you open this menu, you will be asked to "Configure Global Footprint Library Table". Choose "Copy Default Global Footprint Table"</li>
+<li>On the Global Libraries tab select the folder icon at the bottom (Add existing library to table)</li>
+<li>Navigate to wherever you cloned the repo. Choose the <code>SWLib.pretty</code> folder.</li>
+</ol>
+<h3 id="updating">Updating</h3>
+<ol>
+<li>Open a terminal or git bash in the folder you cloned the repository to.</li>
+<li>Run <code>git pull origin main</code></li>
+</ol>
+<h3 id="creating-new-parts">Creating new Parts</h3>
+<p><em>Before creating a new part, check if it exists in one of the builtin KiCad libraries. Many parts do. You can search in the symbol editor.</em></p>
+<p>To create a new part, it is necessary to create both a symbol and footprint for the part. Symbols are used in schematics. Footprints are used on the PCB. In their simplest form, both are a collection of pins with unique numbers. On a symbol, pins are "lines". On a footprint, pins are "holes" or "pads" that go in / on the PCB. Pins on a symbol are associated with pins on a footprint by the pin's number. In addition to numbers, pins on a symbol can have human readable names. These are only used to show the designer what the pin is called.</p>
+<p>To start, create the symbol</p>
+<ol>
+<li>Open the symbol editor (in KiCad's main window)</li>
+<li>Select SWLib in the libraries panel on the left</li>
+<li>Select the new symbol button (or <code>File &gt; New Symbol...</code>)</li>
+<li>Name the symbol. This should typically match the name of the part you are making a symbol for.</li>
+<li>Optionally select an existing symbol to derive from ("start with")</li>
+<li>Change the designator if needed. See <a href="https://en.wikipedia.org/wiki/Reference_designator#Designators">this</a></li>
+<li>Typically, units per package should be left as 1</li>
+<li>
+<p>Leave other settings unchanged</p>
+<p><img alt="" src="../../img/kicad_new_sym.jpg" style="width: 40%" /></p>
+</li>
+<li>
+<p>Click OK to create you symbol. It will be open in the editor.</p>
+</li>
+<li>Make sure the unit is set to "mil" on the left hand toolbar.</li>
+<li>Make sure the grid is set to 50mil (<code>View &gt; Grid Properties</code>). You can see the current grid on the bottom bar.</li>
+<li>Create the symbol. You can use the tools on the right toolbar to "draw" the symbol (lines, shapes, arcs). <strong>Draw your part centered on the origin!</strong></li>
+<li>Then use the "pin" tool (right toolbar) to add the required number of pins. Name the pins using the names in the part's datasheet. Make sure the pin number match the part's package pin numbers. <strong>When creating pins, the "circle" should be facing out.</strong> THis is where wires connect to in the schematic.</li>
+<li>Make sure to drag the designator above the part</li>
+<li>
+<p>Save!</p>
+<p><img alt="" src="../../img/kicad_sym_editor.jpg" style="width:80%" /></p>
+</li>
+</ol>
+<p>After creating the symbol, determine if you need to create a footprint. KiCad's footprint libraries have a footprint for most standard packages (0603, 0805, 1206, etc for resistors, capacitors, diodes, inductors; QFP, TSSOP, SOIC, DIP, QFN, etc for ICs). Open the footprint editor and search for the package your device uses. If it exists, do <strong>not</strong> create a custom footprint. Skip to step 6. If you do need to create the footprint, follow the instructions below.</p>
+<ol>
+<li>Open the footprint editor</li>
+<li>Select "SWLib" in the left panel with all libraries</li>
+<li>Select <code>File &gt; New Footprint</code> to create an empty footprint. Name it the same as your part.</li>
+<li>Use the footprint editor to place pads and draw any desired silkscreen. Make sure the numbers of the pads match the numbers of the pins the pad should be associated with. Follow numbering convention in the part's datasheet.</li>
+<li>
+<p>Save!</p>
+<p><br /></p>
+</li>
+<li>
+<p>Go back to your part in the <strong>Symbol</strong> editor.</p>
+</li>
+<li>Edit symbol properties (<code>File &gt; Symbol Properties...</code>)</li>
+<li>Click the library icon next to the footprint field (you may need to click the footprint field first).</li>
+<li>Select the footprint for your part</li>
+<li>Double check the pin number order of the footprint and schematic. <strong>This is especially important if you are using a footprint you did not make.</strong></li>
+<li>Save!</li>
+</ol>
+<p>Optionally, you can add a 3D model to a footprint.</p>
+<ol>
+<li>Create or download a 3D mode. Save it as a step or stl file in <code>SW-KicadLibrary/SWLib.3d</code>. Name it the same as the part.</li>
+<li>Open the footprint editor and select your part.</li>
+<li>Edit footprint properties (<code>File &gt; Footprint Properties...</code>)</li>
+<li>Select the 3D models tab</li>
+<li>Click the plus button and type the following. <strong>Never use the browse feature to select a 3d model!</strong> Browse tool uses absolute paths, which will break the model on other people's systems.
+    <div class="highlight"><pre><span></span><code>../../SWLib.3d/[FILE].step
+</code></pre></div></li>
+<li>Replace <code>[FILE]</code> with the name of the step file. <strong>This is case sensitive!</strong>.</li>
+<li>Close the properties panel and save the footprint.</li>
+</ol>
+<p>After creating your part (and saving everything) commit your changes in the <code>SW-KicadLibrary</code> repo and push.</p>
+<h3 id="importing-downloaded-parts">Importing Downloaded Parts</h3>
+<p>Many parts will have footprints and symbols (ECAD models) available for download. These often include 3D models too. Some common sources to find these models are</p>
+<ul>
+<li>SamacSys (easiest to access through mosuer; <strong>DO NOT INSTALL THE LIBRARY LOADER! DO NOT USE IT!</strong>)</li>
+<li>UltraLibrarian</li>
+<li>SnapEDA</li>
+</ul>
+<p>Note that you will need an account to use any of these services. </p>
+<ol>
+<li>When downloading a model, download symbol and footprint. If a 3D model is available, download it too.</li>
+<li>
+<p>After downloading, follow the instructions below depending on where you downloaded the model from. Note that if a 3D model was not available, the 3D model file will be missing.</p>
+<details class="custom">
+<summary>SamacSys</summary>
+<p>The downloaded file will be a <code>.zip</code> file. Extract it.Locate the following three files.</p>
+<ul>
+<li>Symbol: <code>[PART]/KiCad/[PART].kicad_sym</code> (older parts may only have a <code>.lib</code> file. This works too.)</li>
+<li>Footprint: <code>[PART]/KiCad/[PACKAGE].kicad_mod</code></li>
+<li>3D Model: <code>[PART]/3D/[PART].stp</code></li>
+</ul>
+</details>
+<details class="custom">
+<summary>UltraLibrarian</summary>
+<p>The downloaded file will be a <code>.zip</code> file. Extract it.Locate the following three files.</p>
+<ul>
+<li>Symbol: <code>KiCAD/[NAME]/[NAME].lib</code></li>
+<li>Footprint: <code>KiCAD/[NAME]/footprints.pretty/[NAME].kicad_mod</code></li>
+<li>3D Model: <code>[NAME]/STEP/[NAME].step</code></li>
+</ul>
+</details>
+<details class="custom">
+<summary>SnapEDA</summary>
+<p>The downloaded file will be a <code>.zip</code> file. Extract it.Locate the following three files.</p>
+<ul>
+<li>Symbol: <code>[PART].kicad_sym</code></li>
+<li>Footprint: <code>[PART].kicad_mod</code></li>
+<li>3D Model: <code>[PART].step</code></li>
+</ul>
+</details>
+</li>
+<li>
+<p>Open KiCad's symbol editor</p>
+</li>
+<li>Find SWLib in the panel on the left.</li>
+<li>Right click "SWLib" and choose "Import Symbol..."</li>
+<li>Choose the symbol file (<code>.lib</code>) described above.</li>
+<li>Save the symbol.</li>
+<li>Open the footprint editor.</li>
+<li>Find SWLib in the panel on the left.</li>
+<li>Right click "SWLib" and choose "Import Footprint..."</li>
+<li>Choose the footprint file (<code>.kicad_mod</code>) described above.</li>
+<li>Save into SWLib</li>
+<li>Copy the 3D model file (<code>.step</code> / <code>.stp</code> file described above) to SWLib. This must be copied to wherever you cloned SWLib. Paste the <code>.step</code> file into <code>SW-KicadLibrary/SWLib.3d</code></li>
+<li>In the footprint editor, edit footprint properties (<code>File &gt; Footprint Properties...</code>)</li>
+<li>Select the 3D models tab</li>
+<li>Click the plus button and type the following. <strong>Never use the browse feature to select a 3d model!</strong> Browse tool uses absolute paths, which will break the model on other people's systems.
+    <div class="highlight"><pre><span></span><code>../../SWLib.3d/[FILE].step
+</code></pre></div></li>
+<li>Replace <code>[FILE]</code> with the name of the step file. <strong>This is case sensitive!</strong>. Change <code>step</code> to a different suffix if the file uses a different suffix.</li>
+<li>Close the properties panel and save the footprint.</li>
+<li>Go back to the symbol editor and select the imported symbol.</li>
+<li>Open symbol properties (<code>File &gt; Symbol Properties...</code>)</li>
+<li>Click the footprint field, then select the browse button</li>
+<li>Choose the footprint now imported into the SWLib footprint library</li>
+<li>Close the symbol properties panel and save.</li>
+</ol>
+<p>After importing your part (and saving everything) commit your changes in the <code>SW-KicadLibrary</code> repo and push.</p>
+<h2 id="creating-a-new-project">Creating a New Project</h2>
+<p><em>Make sure you have installed SWLib first!</em></p>
+<p>TODO</p>
+<h2 id="opening-an-existing-project">Opening an Existing Project</h2>
+<p><em>Make sure you have installed SWLib first!</em></p>
+<p>TODO</p>
+<h2 id="design-workflow">Design Workflow</h2>
+<h3 id="schematic">Schematic</h3>
+<p><strong>Always use a 50mil grid in the schematic editor!</strong> If absolutely necessary, a 25mil grid can be used occasionally, but try to avoid doing so.</p>
+<p>TODO: General schematic work</p>
+<p>TODO: Symbol table conventions and custom part number field</p>
+<p>TODO: Net label and power port behavior across multiple schematic sheets</p>
+<h3 id="electrical-rules-check">Electrical Rules Check</h3>
+<p>TODO</p>
+<h3 id="assign-footprints">Assign footprints</h3>
+<p>TODO (note bulk procedures too)</p>
+<h3 id="pcb-setup">PCB Setup</h3>
+<p>It is generally necessary to setup some board stackup parameters (specifically the number of copper layers) before starting the PCB. In order to make running DRCs later, it is best to import board settings from one of the <a href="https://github.com/ncsurobotics/SW-KiCadTemplates/tree/main">SW-KiCadTemplates</a>. These templates are based on PCB manufacturer board stackups and include design rules. Specifics (such as board color, default item sizes, etc) can be customized after importing a template. To import a template, follow the steps listed below</p>
+<ol>
+<li>Download a zip of the repo and extract the zip (or just clone it)</li>
+<li>Open your project in KiCad</li>
+<li>Open your PCB</li>
+<li>Open Board Setup (<code>File &gt; Board Setup</code>)</li>
+<li>Click the button on the bottom left labeled "Import Settings from Another Board"</li>
+<li>Choose the <code>kicad_pcb</code> file for the template you want to use. Which template is used should depend on how you plan to design the PCB (number of layers, impedance control, etc) as well as who you plan to have manufacture the PCB.</li>
+<li>After selecting a template file, click the "Select All" button (rarely will you want to import only some settings)</li>
+<li>Click "Import Settings"</li>
+<li>Click "OK" to close the board setup dialog</li>
+<li>Save the PCB file</li>
+<li><strong>Restart KiCad (Close fully and reopen the project). Skipping this step can cause library issues until KiCad is restarted.</strong></li>
+</ol>
+<h3 id="pcb-layout-routing">PCB Layout &amp; Routing</h3>
+<p><strong>Always work in mil not mm grid!</strong></p>
+<p>TODO</p>
+<h3 id="design-rules-check-drc">Design Rules Check (DRC)</h3>
+<ol>
+<li>Setup design rules in Boards Setup (<code>File &gt; Board Setup</code>). Fill in options for <code>Design Rules &gt; Constraints</code> and change defaults in <code>Text &amp; Graphics &gt; Defaults</code> as applicable. <strong>Skip this if you imported board settings from one of the template boards!</strong> Close Board Setup dialog when done.</li>
+<li>Open the design rules checker dialog (<code>Inspect &gt; Design Rules Checker</code>)</li>
+<li>At the top, select only "Refill all zones before performing DRC"</li>
+<li>Make sure both errors and warnings are shown (checkboxes near bottom of the dialog)</li>
+<li>Run the DRC</li>
+<li>Fix any errors.</li>
+<li>Fix or waive warnings as warranted.</li>
+</ol>
+<h2 id="tips-and-tricks">Tips and Tricks</h2>
+<h3 id="flat-multi-page-schematics">Flat multi-page Schematics</h3>
+<p>There are two common ways of doing multi-page schematics: Hierarchical and flat. Hierarchical design embeds one sheet as a block in another. Connections between sheets are made using ports. Flat designs have multiple sheets (all considered top level). Connections between sheets are made by naming nets the same name. <strong>AquaPack prefers to use Hierarchical design over flat design practices</strong>.</p>
+<p>In rare cases it may be acceptable to use a flat design, however KiCad doesn't really support them well. You still have to create a top level schematic and add all your sheets as blocks to it. However you just won't add ports or make connections. The top level sheet just acts as a container.</p>
+<h3 id="handsolder-footprints">HandSolder Footprints</h3>
+<p>The builtin KiCad footprint libraries often have two variants of footprints (eg for resistors, capacitors, etc). One is often suffixed "HandSolder". These footprints use elongated pads that make it easier to solder components to the board by hand. These are generally preferred for our use cases.</p>
+<h3 id="mounting-holes">Mounting Holes</h3>
+<p>Do <strong>not</strong> use vias or manually placed pads for mounting holes. This will lead to DRC warnings / errors. Instead use footprints from the builtin "MountingHole" library. These footprints can be added to the PCB without corresponding symbols in the schematic by using the "Add Footprint" option in the PCB editor (<code>Place &gt; Add Footprint</code>). After adding the footprint, make sure to edit its properties and check the "Not in schematic" box.</p>
+<h3 id="silkscreen-text-size">Silkscreen Text size</h3>
+<p>Most manufacturers specify limits on character height and stroke width. KiCad also wants a character width. Always make this equal the the height of your characters!</p>
+<h3 id="adding-images-to-silkscreen">Adding Images to Silkscreen</h3>
+<ol>
+<li>Open the project you want to add images to</li>
+<li>In KiCad's project window open the "Image Converter"</li>
+<li>Click Load Image and choose the image you want to add. Monochrome bitmaps work well. Other image formats work, but you may need to adjust the black / white threshold.</li>
+<li>Choose the size of the image in "Output Size" (if not sure what size you want guess; trial and error is the way to go)</li>
+<li>Choose "Footprint (.kicad_mod file)" for Output Format</li>
+<li>Make sure "Front Silkscreen" is selected for the layer</li>
+<li>Click "Export to Clipboard" (there is generally no reason to save graphics as symbol files)</li>
+<li>Open the PCB (it is recommended to still leave the image converter window open for now too)</li>
+<li>Paste the symbol (Ctrl+V for normal people or CMD+V on mac) and place it where you want on the board</li>
+<li>To place on the back of the board, press the F key with the graphic selected.</li>
+<li>If the size is wrong, do not attempt to resize it in the PCB. Go back to the image converter window, change the size and export to clipboard again. Paste it into the PCB again. Repeat as needed.</li>
+<li>Once the graphic is paced where you want it, double click it to open its properties (footprint properties) and uncheck the "Show" box next to "Reference Designator". Click OK to close the dialog.</li>
+<li>Note that when you run the DRC check, there will be a footprint warning about the graphic. Just exclude the violation.</li>
+</ol>
+<h3 id="thermal-relief-connections-to-pads">Thermal Relief Connections to Pads</h3>
+<p>When connecting a zone to a pad, it will be thermally relieved by default. This means it will be connected with "spokes" instead of solid copper. This is usually desirable, however it can be disabled in the properties of the zone if you need to or specific cases (usually only necessary for high current or if using copper on the board as a heatsink).</p>
+<h3 id="other-useful-options-features-of-pcb-editor">Other Useful Options / Features of PCB Editor</h3>
+<ul>
+<li>You can fill or unfill all copper zones (sometimes called "polygons" or "pours" or "planes") by using <code>Edit &gt; Fill All Zones</code> and <code>Edit &gt; Unfill All Zones</code>. Unfilling zones is useful while working on the board. Filling them lets you see how the zone will be filled after updating the zone itself.</li>
+<li>You can flip the board view using <code>View &gt; Flip Board View</code>. This is sometimes useful if working on the back of the board. This pairs well with the layer presets on the right below the layer selector (for example, select the all back layers preset).</li>
+<li>When editing tracks (traces) you can select one part and use the "U" and "I" keys to select more or less of the track.</li>
+<li>You can bulk edit fonts of silkscreen text using <code>Edit &gt; Edit Text and Graphics Properties...</code>.</li>
+<li>You can automatically cleanup traces and vias (remove redundant segments, etc) using <code>Tools &gt; Cleanup Tracks and Vias...</code>. However, be careful with the "Delete redundant vias" option. This may delete vias you wanted multiple of for current or heat reasons.</li>
+</ul>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      AquaPack Robotics &copy; 2023 Released under <a id="footer-link" href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>
+    </div>
+  
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tabs"], "search": "../../../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.81fa17fe.min.js"></script>
+      
+        <script src="../../../javascript/zooming.min.js"></script>
+      
+        <script src="../../../javascript/activate.js"></script>
+      
+    
+  </body>
+</html>
