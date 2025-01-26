@@ -8,8 +8,10 @@ Documentation for SeaWolf VIII
 Documentation is generated using [mkdocs](https://www.mkdocs.org/) using the [mkdocs-material](https://squidfunk.github.io/mkdocs-material/) theme.
 
 - Install Python3 (executable may just be named `python` on windows)
-- Run the following command
+- Run the following commands from the root of the repository
     ```sh
+    python3 -m venv .venv
+    source .venv/bin/active
     python3 -m pip install -U -r requirements.txt
     ```
 
