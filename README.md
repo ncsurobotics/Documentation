@@ -11,7 +11,7 @@ Documentation is generated using [mkdocs](https://www.mkdocs.org/) using the [mk
 - Run the following commands from the root of the repository
     ```sh
     python3 -m venv .venv
-    source .venv/bin/active
+    source .venv/bin/activate
     python3 -m pip install -U -r requirements.txt
     ```
 
