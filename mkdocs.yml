@@ -49,6 +49,9 @@ nav:
       - Waterproof Splicing: electrical/connectors/waterproof_splice.md
   - Mechanical:
     - Overview: mechanical/overview.md
+    - Grabber: mechanical/grabber.md
+    - Torpedo: mechanical/torpedo.md
+    - Dropper: mechanical/dropper.md
   - Software:
     - Overview: software/overview.md
   - SeaWolf 8: https://ncsurobotics.github.io/SW8-Documentation/
